@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  margin: none;
+  font-family: system-ui;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.918);
+  width: 100%;
+}
+.header-div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 0;
+}
+.header {
+  color: white;
+}
+
+.tasks-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 1rem;
+  color: white;
+  text-align: left;
+  margin-top: 0;
+}
+
+.incompleted-tasks {
+  margin: 1rem;
+  /* margin-right: 20%; */
+  align-items: center;
+  min-width: 40%;
+  max-width: 40%;
+  min-height: 77vh;
+  background-color: rgba(75, 52, 52, 0.355);
+  padding: 0 1rem;
+}
+.h3-incompleted-tasks {
+  color: rgb(247, 133, 133);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-align: center;
+}
+.incompleted-tasks-header-div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.completed-tasks-header-div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.completed-tasks {
+  margin: 1rem;
+  /* margin-left: 10%; */
+  align-items: center;
+  min-width: 40%;
+  max-width: 40%;
+  min-height: 77vh;
+  background-color: rgba(52, 75, 55, 0.198);
+  padding: 0 1rem;
+}
+.h3-completed-tasks {
+  color: rgb(143, 246, 143);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-align: center;
+}
+.add-icon-incompleted-tasks,
+.add-icon-completed-tasks {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.checkbox-input {
+  cursor: pointer;
+}
+.task-content {
+  color: white;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+}
+.task-row {
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+}
+.hidden {
+  display: none;
+}
+.input-task,
+#input-task-completed {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+  width: 15vw;
+  margin-left: 28%;
+}
+.crossmark,
+.crossmark-completed {
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.information-text {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  background-color: rgb(103, 103, 103);
+  z-index: 5000;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+}
+.reset-btn-div {
+  margin: 1rem;
+}
+.reset-btn {
+  border-radius: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+  background-color: rgb(249, 106, 81);
+  color: white;
+  cursor: pointer;
+  &:hover {
+    color: rgb(249, 106, 81);
+    background-color: whitesmoke;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+footer {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    font-size: 3rem;
+  }
+  .tasks-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    color: white;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .incompleted-tasks {
+    min-width: 93vw;
+    min-height: 30vh;
+    max-height: auto;
+  }
+  .incompleted-tasks-header-div,
+  .add-icon-incompleted-tasks {
+    font-size: 2rem;
+  }
+  .add-icon-incompleted-tasks {
+    font-size: 3rem;
+    margin-top: 1.8rem;
+  }
+  .completed-tasks-header-div {
+    font-size: 2rem;
+  }
+  .add-icon-completed-tasks {
+    font-size: 3rem;
+    margin-top: 1.8rem;
+  }
+  .completed-tasks {
+    min-width: 93vw;
+    min-height: 30vh;
+    max-height: auto;
+  }
+  .reset-btn-div {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+  }
+  .reset-btn {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 5px;
+    left: 42%;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+}
