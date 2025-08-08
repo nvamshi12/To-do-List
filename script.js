@@ -143,13 +143,13 @@ tasksDiv.addEventListener("click", function (e) {
   console.log(`CLICKED ON TASKS DIV`);
 
   // if add task icon is clicked for 'incomplete' tasks
-  if (e.target === addIconIncompletedTasks) {
+  if (e.target === addIconIncompletedTasks || e.target === incompletedTasksH3) {
     inputTask.classList.remove("hidden");
     crossMark.classList.remove("hidden");
     inputTask.focus();
   }
   // if add task icon is clicked for 'completed' tasks
-  if (e.target === addIconCompletedTasks) {
+  if (e.target === addIconCompletedTasks || e.target === completedTasksH3) {
     inputTaskForCompleted.classList.remove("hidden");
     crossMarkCompleted.classList.remove("hidden");
     inputTaskForCompleted.focus();

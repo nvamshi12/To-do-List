@@ -153,7 +153,8 @@ footer {
 
 @media (max-width: 1000px) {
   .header {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-top: 3rem;
   }
   .tasks-div {
     display: flex;
@@ -170,10 +171,11 @@ footer {
     min-width: 93vw;
     min-height: 30vh;
     max-height: auto;
+    margin-top: 7rem;
   }
-  .incompleted-tasks-header-div,
-  .add-icon-incompleted-tasks {
-    font-size: 2rem;
+  .h3-incompleted-tasks,
+  .h3-completed-tasks {
+    font-size: 3rem;
   }
   .add-icon-incompleted-tasks {
     font-size: 3rem;
@@ -190,40 +192,50 @@ footer {
     min-width: 93vw;
     min-height: 30vh;
     max-height: auto;
+    justify-content: center;
   }
-  .input-task,
-  #input-task-completed {
-    font-size: 2rem;
-    width: 42vw;
+  .input-task {
+    font-size: 2.5rem;
+    width: 45vw;
     padding: 0.5rem 1.5rem;
+    margin-left: 23%;
+  }
+  #input-task-completed {
+    font-size: 2.5rem;
+    width: 50vw;
+    padding: 0.5rem 1.5rem;
+    margin-left: 20%;
   }
   .task-row,
   .task-content,
   .checkbox-input {
-    font-size: 2.2rem;
+    font-size: 2.9rem;
   }
   input[type="checkbox"] {
     /* Double-sized Checkboxes */
-    -ms-transform: scale(2); /* IE */
-    -moz-transform: scale(2); /* FF */
-    -webkit-transform: scale(2); /* Safari and Chrome */
-    -o-transform: scale(2); /* Opera */
-    transform: scale(2);
+    -ms-transform: scale(3); /* IE */
+    -moz-transform: scale(3); /* FF */
+    -webkit-transform: scale(3); /* Safari and Chrome */
+    -o-transform: scale(3); /* Opera */
+    transform: scale(3);
     padding: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .crossmark,
   .crossmark-completed {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .reset-btn-div {
     position: absolute;
-    top: 3rem;
+    top: 10.5rem;
     right: 0;
+    margin-right: 2rem;
   }
   .reset-btn {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     padding: 0.8rem 1.5rem;
+    font-weight: 550;
   }
   .information-text {
     display: none;
