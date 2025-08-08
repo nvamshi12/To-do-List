@@ -191,6 +191,31 @@ footer {
     min-height: 30vh;
     max-height: auto;
   }
+  .input-task,
+  #input-task-completed {
+    font-size: 2rem;
+    width: 42vw;
+    padding: 0.5rem 1.5rem;
+  }
+  .task-row,
+  .task-content,
+  .checkbox-input {
+    font-size: 2.2rem;
+  }
+  input[type="checkbox"] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+    margin-right: 10px;
+  }
+  .crossmark,
+  .crossmark-completed {
+    font-size: 2rem;
+  }
   .reset-btn-div {
     position: absolute;
     top: 3rem;
@@ -200,6 +225,10 @@ footer {
     font-size: 1.5rem;
     padding: 0.8rem 1.5rem;
   }
+  .information-text {
+    display: none;
+  }
+
   footer {
     position: absolute;
     bottom: 5px;
